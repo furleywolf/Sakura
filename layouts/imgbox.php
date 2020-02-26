@@ -9,9 +9,9 @@
         <?php if (akina_option('focus_logo_text')):?>
         <h1 class="center-text glitch is-glitching Ubuntu-font" data-text="<?php echo akina_option('focus_logo_text', ''); ?>"><?php echo akina_option('focus_logo_text', ''); ?></h1>
    		<?php elseif (akina_option('focus_logo')):?>
-	     <div class="header-tou"><a href="<?php bloginfo('url');?>" ><img src="<?php echo akina_option('focus_logo', ''); ?>"></a></div>
+	     <div class="header-tou"><a href="https://www.furryfan.cn/about/" ><img src="<?php echo akina_option('focus_logo', ''); ?>"></a></div>
 	  	<?php else :?>
-         <div class="header-tou" ><a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url'); ?>/images/avatar.jpg"></a></div>	
+         <div class="header-tou" ><a href="https://www.furryfan.cn/about/"><img src="<?php bloginfo('template_url'); ?>/images/avatar.jpg"></a></div>	
       	<?php endif; ?>
 		<div class="header-info">
             <p><?php echo akina_option('admin_des', 'Hi, Mashiro?'); ?></p>

@@ -21,20 +21,35 @@
 	</div><!-- #page Pjax container-->
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info" theme-info="Sakura v<?php echo SAKURA_VERSION; ?>">
+
 			<div class="footertext">
 				<div class="img-preload">
 					<img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/wordpress-rotating-ball-o.svg">
 					<img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/disqus-preloader.svg">
 				</div>
+                <span style="color: #666666;">Crafted with <i class="fa fa-heart animated" style="color: #e74c3c;"></i> by <a href="https://www.furryfan.cn/wp-admin/" target="_blank" style="color: #000000;text-decoration:none;">Furley</a></span>
 				<p style="color: #666666;"><?php echo akina_option('footer_info', ''); ?></p>
 			</div>
+            <p id="footer-sponsor">
+                <a href="https://console.upyun.com/register/?invite=HJrEKyk6S" target="_blank" alt="CDN Sponsor" rel="nofollow">
+                    <img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.0.8/img/logo/upyun.png" alt="CDN Sponsor" style="height: 2em; max-height: 2em;"></a>&nbsp;&nbsp;&nbsp;
+                <a href="https://cloud.tencent.com/act/cps/redirect?redirect=1025&cps_key=30b03bfa04a9d4b53e5828de12a4529b&from=console" target="_blank" alt="Server provider" rel="nofollow"><img src="https://cdn.furryfan.cn/qcloud.svg" alt="Server provider" style="height: 1.3em; max-height: 1.3em;padding-bottom: 0px;margin-bottom: 0.35em;"></a>&nbsp;&nbsp;&nbsp;
+                <a href="https://www.jsdelivr.com/" target="_blank" alt="Free CDN" rel="nofollow"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.0.8/img/logo/JsDelivr_Logo.svg" alt="jsDelivr" style="height: 2em; max-height: 2em;padding-bottom: 0px;"></a>&nbsp;&nbsp;&nbsp;
+                <a href="https://www.google.com/intl/ja/analytics/" target="_blank" alt="Analytics solution" rel="nofollow"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.0.8/img/logo/Google.svg" alt="Google Analytics" style="height: 1.7em; max-height: 1.7em;padding-bottom: 0px;"></a></p>
 			<div class="footer-device">
 			<p style="font-family: 'Ubuntu', sans-serif;">
 					<span style="color: #b9b9b9;">
 						<?php /* 能保留下面两个链接吗？算是我一个小小的心愿吧~ */ ?>
-						Theme <a href="https://2heng.xin/theme-sakura/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>
+						Theme <a href="https://github.com/mashirozx/Sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://github.com/mashirozx" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>
 					</span>
 				</p>
+                <script type="text/javascript"> //<![CDATA[
+                    var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/");
+                    document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
+                    //]]></script>
+                <script language="JavaScript" type="text/javascript">
+                    TrustLogo("https://www.positivessl.com/images/seals/positivessl_trust_seal_sm_124x32.png", "POSDV", "none");
+                </script>
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

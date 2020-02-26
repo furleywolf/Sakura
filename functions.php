@@ -530,7 +530,7 @@ function specs_zan(){
  * 友情链接
  */
 function get_the_link_items($id = null){
-  $bookmarks = get_bookmarks('orderby=date&category=' .$id );
+  $bookmarks = get_bookmarks('orderby=rand&category=' .$id );
   $output = '';
   if ( !empty($bookmarks) ) {
       $output .= '<ul class="link-items fontSmooth">';
@@ -1698,3 +1698,12 @@ function allow_more_tag_in_comment() {
 }
 add_action('pre_comment_on_post', 'allow_more_tag_in_comment');
 //code end 
+    function my_media_library( $wp_query ) {
+        if ( strpos( $_SERVER[ 'REQUEST_URI' ], '/wp-admin/upload.php' ) !== false ) {
+            if ( !current_user_can( 'manage_options' ) && !current_user_can( 'manage_media_library' ) ) {
+                global $current_user;
+                $wp_query->set( 'author', $current_user->id );
+            }
+        }
+    }
+add_filter('parse_query', 'my_media_library' );

@@ -14,7 +14,7 @@ get_header();
 		<article <?php post_class("post-item"); ?>>
 			<?php the_content(); ?>
 			<div class="links">
-				<?php echo get_link_items(); ?>
+				<?php echo get_the_link_items('8'); ?>
 			</div>
 		</article>
         <div class="have-toc"></div><div class="toc-container"><div class="toc"></div></div>
